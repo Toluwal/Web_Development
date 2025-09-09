@@ -1,0 +1,99 @@
+<!-- HTML DOcument Structure
+ Every HTML document folows a standard structure with essential elements-->
+
+<!DOCTYPE html>   <!-- declares this as an HTML5 document-->
+<html lang="en">    <!-- html: Root element that contains all content-->
+<head>              <!-- contains metadata (not visible on the page)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>              <!-- contains visible content-->
+    <h1> Welcome to HTML!</h1>   <!-- Main heading-->
+    <p> This is my first HTML document.</p>     <!-- Paragraph text -->   
+
+</body>
+</html>
+
+<!-- HTML Headings-->
+
+<h1>This is Heading 1 - Main Title</h1>
+<h2>This is Heading 2 - Section Title</h2>
+<h3>This is Heading 3 - Sub-section</h3>
+<h4>This is Heading 4 - Sub-subsection</h4>
+<h5>This is Heading 5 - Minor heading</h5>
+<h6>This is Heading 6 - Smallest heading</h6>
+
+<!-- Paragraphs and Text Formatting
+ Paragraphs are the building blocks of content, and we can format text in various ways.-->
+
+ <p>This is a normal Paragraph of text.</p>
+ <p>This Paragraph contains <strong>bold text</strong> and <em>italic text</em>.</p>
+ <p>You can also use <b>bold</b> and <i>italic</i> tags.</p>
+ <p>This text has <u>underline</u> and this has <mark>highlighting</mark>.</p>
+ <p>For code, use <code>console.log('Hello World')</code> tags.</p>
+ <p>Chemical formulas: H<sub>2</sub>O and equations: E=mc<sup>2</sup></p>
+
+
+ <!--Lists in HTML
+ HTML supports ordered(numbered) and unordered(bulleted) lists-->
+
+ <h3>Unordered List (Bullets)</h3>
+ <ul>
+    <li>HTML - Structures</li>
+    <li>CSS - Styling</li>
+    <li>JavaScript - Behaviour</li>
+    <li>React - Framework</li>
+ </ul>
+
+<h3>Ordered List (Numbers)</h3>
+<ol>
+    <li>Learn HTML basics</li>
+    <li>Master CSS styling</li>
+    <li>Practice JavaScript</li>
+    <li>Build projects</li>
+</ol>
+
+<h3>Nested Lists</h3>
+<ul>
+    <li>Frontend technologies
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+    <li>Backend technologies
+        <ul>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>PHP</li>
+        </ul>
+    </li>    
+</ul>
+
+<!--HTML Attributes
+Attributes provide additional Information about HTML element. They are written inside the opening tag-->
+
+<div style="border: 2px solid blue; padding: 15px; margin: 10px;">
+    <h2 id = "main-title" class="header-style">Attributes Example</h2>
+
+    <p title="This tooltip appears on hover!">Hover over this text to see a tooltip.</p>
+
+    <p style="color: red; font-size: 18px;"> This text is styled with inline CSS.</p>
+
+    <p lang="es">Hola mundo!</p>
+
+    <div class="info-Box" id="special-section">
+    <p>This div has both class and id attributes for styling and JavaScript targeting.</p>
+    </div> 
+</div>
+
+<p><strong>Common Attributes:</strong></p>
+<ul>
+    <li><code>id</code> - Unique identifier</li>
+    <li><code>class</code> - Grouping elements for styling</li>
+    <li><code>style</code> - Inline Css styling</li>
+    <li><code>title</code> - Tooltip text</li>
+</ul>
+
