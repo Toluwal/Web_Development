@@ -1,0 +1,141 @@
+<!--HTML FORMS & MEDIA-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Contact Form</title>
+    
+</head>
+<body>
+    <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; max-width: 500px;">
+    <h3 style="color: #2c3e50; text-align: center;">Basic Contact Form</h3>
+        <form>
+         <div style="margin-bottom: 15px;">
+                <label for="fullname" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;">Full Name:</label>
+                <input type ="text" id = "fullname" name="fullname"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius:5px;"
+                    placeholder="Enter your fullname">
+            </div>
+                     <div style="margin-bottom: 15px;">
+                <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;">Email:</label>
+                <input type ="email" id = "email" name="fullname"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius:5px;"
+                    placeholder="your.email@example.com">
+            </div>
+                     <div style="margin-bottom: 15px;">
+                <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;">Message:</label>
+                <textarea id = "message" rows = 4 name="fullname"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius:5px;"
+                    placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit"
+            style="background-color: #022f4d; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            Send Message
+            </button>
+        </form>
+    </div>    
+
+</body>
+</html>
+
+<!--INPUT TYPES-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input type Demo</title>
+</head>
+<body>
+    <div style="background-color: #fff5f5; padding: 20px; border-radius: 10px; max-width: 600px;">
+        <h3 style="color: #e74c3c;">HTML Input Types Demo></h3>
+
+        <form style="color:black">
+            <table style="width: 100%; border-spacing: 10px;">
+                <tr>
+                    <td><label for="text=input"><strong>Text:</strong><label></td>
+                    <td><input type="text" id="text-input" placeholder="Regular text" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password=input"><strong>Password:</strong><label></td>
+                    <td><input type="password" id="password-input" placeholder="Enter password" ></td>
+                </tr>
+                <tr>
+                    <td><label for="email=input"><strong>Email:</strong><label></td>
+                    <td><input type="email" id="email-input" placeholder="User@example.com" ></td>
+                </tr>
+                <tr>
+                    <td><label for="number=input"><strong>Number:</strong><label></td>
+                    <td><input type="number" id="number-input" min="1" max="100" placeholder="1-100" 
+                        style="padding: 8px; border: 1 px solid; border-radius: 4 px; width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="date=input"><strong>Date:</strong><label></td>
+                    <td><input type="date" id="date-input" 
+                        style="padding: 8px; border: 1 px solid; border-radius: 4 px; width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="color=input"><strong>Color:</strong><label></td>
+                    <td><input type="color" id="color-input" value="#3498db"
+                        style="padding: 1px; border: 1 px solid #ddd; border-radius: 4px; width: 60%; height: 35px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="range=input"><strong>Range:</strong><label></td>
+                    <td><input type="range" id="range-input" min="0" max="100" value="50" style="width: 100%;"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Type Demo2 </title>
+</head>
+<body>
+    <div style="background-color: #fff5f5; padding: 20px; border-radius: 10px; max-width: 600px;">
+     <h3 style="color: #e74c3c;">HTML Input Types Demo</h3>
+     <form style="color:black;">
+        <div style="margin-bottom: 15px;">
+            <label for="text-input" style="display: block; margin-bottom: 5px;"><strong>Text</strong></label>
+            <input type ="text" id="text-input" placeholder="Regular text"
+                style="width: 70%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="password-input" style="display: block; margin-bottom: 5px;"><strong>Password</strong></label>
+            <input type ="password" id="password-input" placeholder="Enter password"
+                style="width: 70%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="email-input" style="display: block; margin-bottom: 5px;"><strong>Email</strong></label>
+            <input type ="email" id="email-input" placeholder="User@example.com"
+                style="width: 70%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="number-input" style="display: block; margin-bottom: 5px;"><strong>Number</strong></label>
+            <input type ="number" id="number-input" min="1" max="100" placeholder="1-100"
+                style="width: 70%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="date-input" style="display: block; margin-bottom: 5px;"><strong>Date</strong></label>
+            <input type ="date" id="date-input" 
+                style="width: 70%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="color-input" style="display: block; margin-bottom: 5px;"><strong>Color</strong></label>
+            <input type ="color" id="color-input" value="#3498db"
+                style="width: 60px; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+    </div>
+    <div style="margin-bottom: 15px;">
+            <label for="range-input" style="display: block; margin-bottom: 5px;"><strong>Range</strong></label>
+            <input type ="range" id="range-input" min="0" max="100" 
+                style="width: 70%; ">
+    </div>
+</body>
+</html>
