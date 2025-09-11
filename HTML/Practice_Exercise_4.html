@@ -42,15 +42,38 @@
             <label for="first name" style="display: block; margin-bottom: 5px; font-weight: bold; 
             color: #FCF8DD;">Age:</label>
             <input type ="number" id = "age=input" min="22" max="60" name="age"
-                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius:5px;"
+                    style="width: 90%; padding: 8px; border: 2px solid #ddd;  border-radius:5px;"
                     placeholder="22-60">
         </div>
         <div style="margin-bottom: 15px;">
-            <label for="first name" style="display: block; margin-bottom: 5px; font-weight: bold; 
+            <label for="gender" style="display: block; margin-bottom: 5px; font-weight: bold; 
             color: #FCF8DD;">Gender:</label>
-            <input type="button" value="radio" id = "gender" name="gender"
-                    style="width: 90%; padding: 8px; border: 2px solid #ddd; border-radius:5px;">
-                </div>
+            <input type="radio" id= "male" name="gender" value="male">
+            <label for="male" style="color: #FCF8DD;">Male</label><br>
+            <input type="radio" id= "male" name="gender" value="female">
+            <label for="female" style="color: #FCF8DD;">Female</label>
+        <div style="margin-bottom: 15px;">
+            <label for="interest" style="display: block; margin-bottom: 5px; font-weight: bold; 
+            color: #FCF8DD;">Interest:</label>
+                <select id="interest" name="interest" 
+                style="width: 90%; padding: 8px; border: 2px solid #ddd; color: #00809D; border-radius: 5px;">
+                <option value="outdoor">Outdoor Activity</option>
+                <option value="workshops">Workshops</option>
+                <option value="social">Social Events</option>
+                <option value="volunteer">Volunteer Opportunities</option>
+                </select>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label for="country" style="display: block; margin-bottom: 5px; font-weight: bold; 
+            color: #FCF8DD;">Country:</label>
+                <select id="country" name="country" 
+                style="width: 90%; padding: 8px; border: 2px solid #ddd; color: #00809D; border-radius: 5px;">
+                <option value="outdoor">Nigeria</option>
+                <option value="workshops">Ghana</option>
+                <option value="social">United Kingdom</option>
+                <option value="volunteer">United State of America</option>
+                </select>
+        </div>
         <button type="submit"
             style="background-color: #023d4b; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
             Submit

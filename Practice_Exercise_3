@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: #f9f9f9; margin: 20px;">
+
+  <!-- Page title -->
+  <h1 style="color: green; text-align: center;">About Me</h1>
+  <p style="text-align: center;">Emerging Web Developer | Data Enthusiast | Business Developer</p>
+
+  <!-- Section 1 -->
+  <h2 style="color: green;">An Emerging Web Developer</h2>
+  <p>I enjoy learning how websites are built. I started with HTML and CSS and now I am practicing JavaScript. Each project I make helps me understand more.</p>
+
+  <!-- Section 2 -->
+  <h2 style="color: green;">My Journey So Far</h2>
+  <p>I studied Environmental Management and Protection and worked in Business Development at Coca-Cola Hellenic Bottling Company. Later, I discovered my passion for tech and started learning data analysis and web development.</p>
+
+  <!-- Section 3 -->
+  <h2 style="color: green;">Skills & Tools</h2>
+  <p>I am learning the basics of HTML, CSS, and JavaScript. I also use Power BI, Excel, and Google Sheets. I have also learnt Git, Python, and SQL and in all I am emerging step by step to be the best version of me.</p>
+
+  <!-- Section 4 -->
+  <h2 style="color: green;">Looking Ahead</h2>
+  <p>My goal is to become a full-stack developer and create useful digital solutions. I want to keep learning and growing every day.</p>
+
+  <!-- Footer -->
+  <p style="text-align: center; margin-top: 20px;">
+    Connect with me: 
+    <a href="mailto:itunubisayo@gmail.com" style="color: green;">Email</a> | 
+    <a href="www.linkedin.com/in/itunu-aboderin-1b88b3127" target="_blank" style="color: green;">LinkedIn</a> | 
+    <a href="https://github.com/Toluwal" target="_blank" style="color: green;">GitHub</a>
+  </p>
+  <p style="text-align: center; color: gray;">&copy; 2025 ITUNU BISAYO</p>
+
+</body>
+</html>
