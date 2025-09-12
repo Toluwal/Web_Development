@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color:#FFFDD3; margin:0; padding:0;">
+
+  <!-- Header -->
+  <div style="background-color:#9B111E; padding:20px; text-align:center; color:white;">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you!</p>
+  </div>
+
+  <!-- Contact Form -->
+  <div style="padding:20px; background-color:#FFF5BD; margin:20px; border-radius:10px; box-shadow:0 2px 6px color #9B111E;">
+    <h3 style="color:#9B111E;">Get in touch with us</h3>
+    <form>
+      <label style="display:block; margin-top:10px;">Full Name:</label>
+      <input type="text" name="name" placeholder="Olalekan Oladejo" style="width:100%; padding:8px; margin-top:4px; border:1px solid #FFF5BD; border-radius:5px;">
+
+      <label style="display:block; margin-top:10px;">Email:</label>
+      <input type="email" name="email" placeholder="user@gmail.com" style="width:100%; padding:8px; margin-top:4px; border:1px solid #FFF5BD; border-radius:5px;">
+
+      <label style="display:block; margin-top:10px;">Phone Number:</label>
+      <input type="tel" name="phone" style="width:100%; padding:8px; margin-top:4px; border:1px solid #FFF5BD; border-radius:5px;">
+
+      <fieldset style="border: 2px solid #FFF5BD; border-radius: 8px; padding: 8px; margin-top: 10px;">
+                <legend slot="display: block;">Preferred Contact Method (Check all that apply):</legend>
+
+                <div>
+                    <p><label><input type="radio" name="email" value="email">email-input</label>
+                    </p>
+                    <p><label><input type="radio" name="phone"
+                                value="phone">Phone</label></p>
+                </div>
+            </fieldset>
+           <label style="display:block; margin-top:10px;">Service Interested In:</label>
+      <select style="width:100%; padding:8px; margin-top:4px; border:1px solid #FFF5BD; border-radius:5px;">
+        <option>AI Development</option>
+        <option>Data Analytics</option>
+        <option>Design</option>
+        <option>Data Engineering</option>
+      </select>
+
+      <label style="display:block; margin-top:10px;">Message:</label>
+      <textarea name="message" rows="4" style="width:100%; padding:8px; margin-top:4px; border:1px solid #FFF5BD; border-radius:5px;"></textarea>
+
+      <br><br>
+      <button type="submit" style="background-color:#9B111E; color:FFFDD3; padding:10px 15px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Company Info Table -->
+  <div style="padding:20px; background-color:#FFF5BD; margin:20px; border-radius:10px; box-shadow:0 2px 6px color #9B111E;">
+    <h3 style="color:#9B111E;">Company Information</h3>
+    <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+      <tr style="background-color:#9B111E; color:FFF5BD;">
+        <th style="padding:10px; text-align:left;">Department</th>
+        <th style="padding:10px; text-align:left;">Contact Person</th>
+        <th style="padding:10px; text-align:left;">Email</th>
+      </tr>
+      <tr style="background-color:#FFF5BD;">
+        <td style="padding:10px;">Sales</td>
+        <td style="padding:10px;">Mercy Johnson</td>
+        <td style="padding:10px;">me.jo@gmail.com</td>
+      </tr>
+      <tr>
+        <td style="padding:10px;">Support</td>
+        <td style="padding:10px;">John Igwe</td>
+        <td style="padding:10px;">jo.ig@gmail.com</td>
+      </tr>
+      <tr style="background-color:#FFF5BD;">
+        <td style="padding:10px;">HR</td>
+        <td style="padding:10px;">Beatrice Komolafe</td>
+        <td style="padding:10px;">be.ko@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Image Gallery -->
+  <div style="padding:20px; background-color:#FFF5BD; margin:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center;">
+    <h3 style="color:#9B111E;">Our Gallery</h3>
+    <img src="./assets/img_1.jpg" alt="Office" style=" width: 100px; Height:100px; margin:10px; border-radius:8px;">
+    <img src="./assets/img2.jpg" alt="Team" style=" width:100px; Height:100px ; margin:10px; border-radius:8px;">
+    <img src="./assets/img3.webp" alt="Workspace" style=" width: 100px; Height:100px; margin:10px; border-radius:8px;">
+  </div>
+
+  <!-- Contact Details -->
+  <div style="padding:20px; background-color:#9B111E; color:#FFF5BD; text-align:center;">
+    <p>Email: contact@company.com | Phone: +234812345678 9</p>
+    <p>
+      <a href="https://www.linkedin.com/company/publica-ai/" target="_blank" style="color:#FFE9A1; margin:0 10px;">LinkedIn</a> |
+      <a href="https://x.com/PublicaaiMedia" target="_blank" style="color:#FFE9A1; margin:0 10px;">Twitter</a> |
+    </p>
+    <p style="font-size:12px;">&copy; 2025 My Company. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
