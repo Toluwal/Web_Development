@@ -1,0 +1,110 @@
+<!-- **Task:** Create a styled "About Me" card using CSS selectors and typography properties.
+
+**Requirements:**
+- Use different heading levels with custom fonts
+- Apply colors using different CSS color methods
+- Use classes for reusable styles
+- Include proper spacing with padding and margin
+- Make it visually appealing with borders and backgrounds -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        body {
+            background-color: #f7f4ea;
+            margin: auto;
+            width: 250px;
+
+        }
+        .gencontainer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #a8bbab;
+            width: 500px;
+        }
+
+        .whocontainer {
+            background-color: #EBD9D1;
+            padding: 40px;
+            margin: auto;
+            border: 2px solid #B87C4C;
+            text-align: justify;
+            height: 200px;
+            width: 350px;
+        
+            
+        }
+
+        h1 {
+            display: flex;
+            justify-content: left;
+            color: #9a3f3f;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: left;
+            color: #9a3f3f;
+            font-weight: bold;
+            margin-top: 0;
+
+        }
+
+        .skillscontainer {
+            background-color: #EBD9D1;
+            padding: 40px;
+            margin: auto;
+            border: 2px solid #B87C4C;
+            text-align: justify;
+            height: 200px;
+            width: 350px;
+            
+        
+        }
+
+
+        .focuscontainer {
+            background-color: #EBD9D1;
+            padding: 40px;
+            margin: auto;
+            border: 2px solid #B87C4C;
+            text-align: justify;
+            height: 200px;
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gencontainer">
+        <div class="whocontainer">
+            <h1>WHO I AM</h1>
+            <p>I'm Itunu Bisayo, a professional with experience in business development and customer engagement, data
+                analytics, now building a career in AI Developer.</p>
+            <p>My background combines research, strategy, and client-focused growth, giving me a unique perspective on
+                how data can power business success.</p>
+        </div>
+        <div class="skillscontainer">
+            <h2>MY SKILLS</h2>
+            <p>Proficient in Power BI, Excel, and SQL for data analysis and visualization.</p>
+            <p>Skilled at turning raw data into actionable insights.</p>
+            <p>Experienced in relationship building, sales strategy, and problem-solving from my time at Coca-Cola HBC
+            </p>
+        </div>
+        <div class="focuscontainer">
+            <h2>MY FOCUS</h2>
+            <p>I'm passionate about using data to solve real problems and help organizations make smarter decisions.</p>
+            <p>I aim to grow into a data-driven professional who creates value at the crossroads of analytics and
+                business strategy.</p>
+        </div>
+    </div>
+</body>
+
+</html>

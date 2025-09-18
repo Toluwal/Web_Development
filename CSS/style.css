@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: #fff4a4;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile {
+  background: #386641; 
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+  width: 260px;
+  height: 400px;
+  border-radius: 0px;
+}
+
+.profile__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile__hello {
+  font-size: 1.3em;
+  margin: 10px 0;
+  color: #f97a00;
+}
+
+.profile__desc {
+  font-size: 0.9em;
+  margin: 15px 0;
+}
+
+.socials a {
+  margin: 0 8px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #00bcd4;
+  background: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f97a00;
+  color: white;
+}

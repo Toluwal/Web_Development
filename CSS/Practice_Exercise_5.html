@@ -1,0 +1,71 @@
+<!-- **Task:** Create a "Sticky Header" layout
+
+**Requirements:**
+- Create a header that stays at the top when scrolling (fixed position)
+- Include a navigation menu with inline-block items
+- Add some content below that you can scroll through
+- Use proper z-index to ensure header stays on top
+- Style with colors and spacing for visual appeal -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #e8d4b7;
+        }
+         .sticky-header {
+        position: fixed;
+        top: 0;
+        background-color: blue;
+        color: white;
+            margin-bottom: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        text-align: left;
+        z-index: 10;
+    }
+        .navigation{
+        background-color: #ff0066;
+        padding: 15px;
+        border-radius: 5px;
+        }
+        .nav{
+        color: #d3dad9;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="sticky-header">
+        This is a sticky-header.
+    </div>
+ 
+    <nav class="navigation">
+        <a href="#" class="nav">Home</a>
+        <a href="#" class="nav">About</a>
+        <a href="#" class="nav">Services</a>
+        <a href="#" class="nav">Contact</a>
+    </nav>
+    <div class="content">
+          <h1>Main Responsibilities for an Artificial Intelligence Developer</h1>
+          <p>The exact responsibilities of an AI developer will depend on an individual's specific position, but here is an overview of typical responsibilities, as listed by coding school Le Wagon:
+
+
+<ul>
+    <li>Solve problems using AI software. AI developers utilize their expertise in algorithms and machine learning to optimize business processes, support data-driven decisions and promote efficiency.</li>
+
+<li>Present AI systems in an approachable way. Effective communication is key; especially when leadership is not well-versed in the latest AI technologies. It is up to the AI developer to ensure widespread understanding as needed.</li>
+<li>Design, implement and finetune AI systems. AI developers are responsible for designing and building AI systems from the ground up, ensuring they align with specific project goals.</li>
+<li>Invest in ongoing education. Staying up to date on the latest AI technologies is crucial in a competitive landscape, with the latest best practices, tools and techniques all needed to move forward.</li>
+<li>Be a leader. AI developers often take on a mentorship role, helping team members understand and apply AI technologies to ensure smooth adoption and use.</p>
+    </ul>
+</div>
+  
+</body>
+</html>

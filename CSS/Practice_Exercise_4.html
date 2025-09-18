@@ -1,0 +1,149 @@
+<!-- - Use a class selector for the card container
+- Apply a background color using any color method (hex, rgb, etc.)
+- Style the heading with custom font family and size
+- Use different font weights for emphasis
+- Apply proper spacing with padding and margin
+- Add a border with rounded corners
+- Include multiple paragraphs with good line height
+- Make the text well-aligned and readable -->
+
+<!-- **Task:** Create a styled "About Me" card using CSS selectors and typography properties.
+
+**Requirements:**
+- Use different heading levels with custom fonts
+- Apply colors using different CSS color methods
+- Use classes for reusable styles
+- Include proper spacing with padding and margin
+- Make it visually appealing with borders and backgrounds -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 200px;
+            /* Content width */
+            height: 100px;
+            /* Content height */
+            padding: 20px;
+            /* Space inside */
+            border: 2px gray;
+            /* Border around element */
+            margin: 15px;
+            /* Space outside */
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: #fff4a4;
+            width: 450px;
+            height: 430px;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 10%;
+        }
+
+        .profile {
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 1.2;
+            max-width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: #fed16a;
+            color: #386641;
+            text-decoration: none;
+        }
+
+        .profile__image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin: 0 auto 20px auto;
+            display: block;
+        }
+
+        .profile__name {
+            font-size: 1.2em;
+            font-size: larger;
+            font-weight: bolder;
+            margin-bottom: 8px;
+        }
+
+        .profile__title {
+            margin-bottom: 70px;
+            line-height: 1.5;
+            font-size: smaller;
+
+        }
+
+        .profile__detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+
+        }
+
+        .content {
+            display: flex;
+            max-width: 400px;
+            width: 350px;
+            height: 250px;
+            line-height: 1.5;
+            font-family: sans-serif;
+            font-size: small;
+            text-align: justify;
+            color: #386641;
+            object-fit: cover;
+            margin: 20px;
+            display: block;
+                }
+        .content h{
+            font-weight: bolder;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./img.jpg" alt="profile image" class="profile__image">
+            <div class="profile__name">Itunu Bisayo ABODERIN</div>
+            <div class="profile__title">Emerging AI Developer|<br>Data Analyst|<br>Environmental Scientist</div>
+            <div class="profile__details">1219 followers</div>
+        </div>
+        <div class="content">
+            <header>
+                <h3>About Me</h3>
+            </header>
+            <p>Hi, I'm a Business Developer transitioning into AI Developer. I hold a Master's degree in Environmental Management
+                and Protection and hands on experience in research, customer engagement, and business growth strategies.</p>
+            <p> I am Skilled in Power BI, Excel, SPSS, SQL, and Python.</p> 
+            
+        <p>I enjoy turning data into insights that solve problems and
+                drive decisions.</p>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        color: green;
+        font-size: 24px;
+    }
+
+    p {
+        color: gray;
+        font-family: Arial, sans-serif;
+    }
+
+    .highlight {
+        background-color: yellow;
+        padding: 5px;
+    }
+</style>
+
+<body>
+
+    <h1>This heading uses CSS styling</h1>
+    <p>This paragraph also uses CSS styling with a different font and color.</p>
+    <p class="highlight">This paragraph has a highlight class applied.</p>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .internal-example {
+        color: blue;
+        font-family: Arial, sans-serif;
+        background-color: #e8f4fd;
+        padding: 15px;
+        border-radius: 1px;
+        margin: 10px 0;
+    }
+</style>
+
+<!-- Inline CSS Example -->
+<h2 style="color: red; font-size: 24px; text-align: center;">This uses Inline CSS</h2>
+
+<!-- Internal CSS Example -->
+<div class="internal-example">
+    <h3>This uses Internal CSS</h3>
+    <p>The styling is defined in the &lt;style&gt; tag above.</p>  <!-- lt means less than and gt means greater than-->
+</div>
+<body>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Element Selector - targets all p tags */
+    p {
+        color: #gray;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    /* Class Selector - can be used multiple times */
+    .highlight {
+        background-color: #fff3cd;
+        padding: 8px;
+        border-left: 3px solid #ffc107;
+        border-radius: 4px;
+    }
+    
+    .success {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 8px;
+        border-left: 3px solid #28a745;
+        border-radius: 4px;
+    }
+    
+    /* ID Selector - should be unique on the page */
+    #special-title {
+        color: #e74c3c;
+        font-size: 28px;
+        text-align: center;
+        border: 2px dashed #e74c3c;
+        padding: 15px;
+        border-radius: 8px;
+    }
+</style>
+
+<h3>CSS Selectors in Action</h3>
+
+<!-- Element Selector Demo -->
+<h4>Element Selector Example:</h4>
+<p>This paragraph uses the element selector (all p tags get this styling)</p>
+<p>This paragraph also gets the same styling automatically</p>
+
+<!-- Class Selector Demo -->
+<h4>Class Selector Examples:</h4>
+<p class="highlight">This paragraph uses the .highlight class</p>
+<p class="success">This paragraph uses the .success class</p>
+<p>This paragraph has no class, so it only gets the basic p styling</p>
+
+<!-- ID Selector Demo -->
+<h4>ID Selector Example:</h4>
+<div id="special-title">This div uses the #special-title ID</div>
+<p><em>Remember: IDs should be unique - only use once per page!</em></p>
+<body>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .color-demo {
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .named-color {
+        background-color: lightblue;
+        color: darkblue;
+    }
+    
+    .hex-color {
+        background-color: #ff6b6b;
+        color: white;
+    }
+    
+    .rgb-color {
+        background-color: rgb(74, 144, 226);
+        color: white;
+    }
+    
+    .rgba-color {
+        background-color: rgba(155, 89, 182, 0.8);
+        color: white;
+    }
+    
+    .hsl-color {
+        background-color: hsl(120, 100%, 75%);
+        color: hsl(120, 100%, 25%);
+    }
+</style>
+
+<h3>CSS Color Methods in Action</h3>
+
+<div class="color-demo named-color">
+    Named Color: lightblue background, darkblue text
+</div>
+
+<div class="color-demo hex-color">
+    Hex Color: #ff6b6b background
+</div>
+
+<div class="color-demo rgb-color">
+    RGB Color: rgb(74, 144, 226) background
+</div>
+
+<div class="color-demo rgba-color">
+    RGBA Color: rgba(155, 89, 182, 0.8) - Notice the transparency!
+</div>
+
+<div class="color-demo hsl-color">
+    HSL Color: hsl(120, 100%, 75%) background with hsl(120, 100%, 25%) text
+</div>
+
+<div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 20px; color: black">
+    <h4>Color Tips:</h4>
+    <ul>
+        <li><strong>Hex codes:</strong> #ff0000 (red), #00ff00 (green), #0000ff (blue)</li>
+        <li><strong>RGB values:</strong> 0-255 for each color channel</li>
+        <li><strong>RGBA alpha:</strong> 0 = fully transparent, 1 = fully opaque</li>
+        <li><strong>HSL:</strong> Hue (0-360°), Saturation (0-100%), Lightness (0-100%)</li>
+    </ul>
+</div>
+<body>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .typography-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+    
+    .section-title {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    
+    /* Font Family Examples */
+    .serif-font {
+        font-family: 'Times New Roman', serif;
+        font-size: 18px;
+    }
+    
+    .sans-serif-font {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+    }
+    
+    .monospace-font {
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+    }
+    
+    /* Font Weight Examples */
+    .light-text {
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    .bold-text {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    /* Text Transform Examples */
+    .uppercase-text {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .capitalize-text {
+        text-transform: capitalize;
+    }
+    
+    /* Text Decoration Examples */
+    .underlined-text {
+        text-decoration: underline;
+        color: #3498db;
+    }
+    
+    /* Text Alignment Examples */
+    .center-text {
+        text-align: center;
+        background-color: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .right-text {
+        text-align: right;
+    }
+    
+    /* Line Height Example */
+    .spaced-text {
+        line-height: 2;
+        background-color: #d5dbdb;
+        padding: 15px;
+        border-radius: 5px;
+    }
+</style>
+
+<h3>Typography & Text Styling Examples</h3>
+
+<div class="typography-section">
+    <h4 class="section-title">Font Families</h4>
+    <p class="serif-font">This text uses Times New Roman (serif font) - good for reading</p>
+    <p class="sans-serif-font">This text uses Arial (sans-serif font) - clean and modern</p>
+    <p class="monospace-font">This text uses Courier New (monospace) - all characters same width</p>
+</div>
+
+<div class="typography-section">
+    <h4 class="section-title">Font Weights and Sizes</h4>
+    <p style="font-size: 14px;">Small text (14px)</p>
+    <p style="font-size: 16px;">Normal text (16px)</p>
+    <p style="font-size: 20px;">Larger text (20px)</p>
+    <p style="font-size: 24px; color: #e74c3c;">Large colored text (24px)</p>
+    <p class="light-text">This text is light weight (300)</p>
+    <p class="bold-text">This text is bold weight</p>
+</div>
+
+<div class="typography-section">
+    <h4 class="section-title">Text Transformations</h4>
+    <p class="uppercase-text">this text becomes uppercase with letter spacing</p>
+    <p class="capitalize-text">this text becomes capitalized</p>
+    <p class="underlined-text">This text is underlined and colored</p>
+    <p style="text-decoration: line-through;">This text has a line through it</p>
+</div>
+
+<div class="typography-section">
+    <h4 class="section-title">Text Alignment</h4>
+    <p>This text is left-aligned (default)</p>
+    <p class="center-text">This text is center-aligned</p>
+    <p class="right-text">This text is right-aligned</p>
+</div>
+
+<div class="typography-section">
+    <h4 class="section-title">Line Height</h4>
+    <p class="spaced-text">
+        This paragraph has double line height (line-height: 2), which creates more space between lines. 
+        This makes text easier to read and gives it a more open, airy feeling. Line height is crucial 
+        for readability and overall text appearance.
+    </p>
+</div>
+<body>
+    
+</body>
+</html>
