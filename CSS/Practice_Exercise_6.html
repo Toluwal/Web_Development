@@ -1,0 +1,86 @@
+<!-- **Task:** Create a "Holy Grail" layout using Flexbox
+
+**Requirements:**
+- Header at the top (full width)
+- Footer at the bottom (full width)  
+- Three-column middle section: sidebar, main content, sidebar
+- Main content should grow to fill available space
+- Should work on different screen sizes
+- Use proper colors and spacing for visual appeal
+
+**Bonus:**
+- Make it responsive (sidebars stack on smaller screens) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box Holy Grail</title>
+    <style>
+        body{
+          color: #333;
+          display: flex;
+          flex-direction: column;
+          min-height: 100rh;
+          
+        }
+        header {
+            background-color: #b8b8b8;
+            font-size: larger;
+            padding: 30px;
+            border: 2px solid red;
+
+        }
+        main{
+            display: flex;
+            flex: 1 1 0%;
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+
+
+        article.main {
+            background-color: #efefef;
+            flex-grow: 1;
+            border: 2px red;
+           padding: 30px;
+           border: 2px rd;
+        }
+
+        aside {
+            background-color: #84ccf0;
+            flex: 0 0 25%;
+            padding: 10px;
+            border: 2px red;
+        }
+        .Sidebar1{ order: -1;}
+
+        footer {
+            background-color: #b8b8b8;
+            padding: 30px;
+            border: 2px solid red
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gencontainer">
+        <header>Header / Navigation</Header>
+    <main>
+        <aside class="sidebar1">Sidebar1 [nav]</aside>
+        <article class="main">Main</article>
+        <aside class="sidebar2">Sidebar2[ads]</aside>
+    </main>
+        <footer>Footer</Footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
