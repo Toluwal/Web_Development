@@ -1,0 +1,32 @@
+    .js-demo {
+        background-color: #f3f2ec;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 2px solid #1e93ab;
+        color: black
+    }
+    
+    .output {
+        background-color: #dcdcdc;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        border-left: 4px solid #e62727;
+    }
+    
+    .demo-button {
+        background-color: #e62727;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .demo-button:hover {
+        background-color: #1e93ab;
+    }
