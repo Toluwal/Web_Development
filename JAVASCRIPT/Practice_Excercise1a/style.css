@@ -1,0 +1,33 @@
+    .task {
+        background-color: #fbf9d1;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 2px solid #e6cfa9;
+        color: black
+    }
+    
+    .output {
+        background-color: #e6cfa9;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        border-left: 4px solid #9a3f3f;
+    }
+    
+    .class-task {
+        background-color: #9a2f3f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .demo-button:hover {
+        background-color: #c1856d;
+    }
+    

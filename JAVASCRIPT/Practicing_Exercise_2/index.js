@@ -6,7 +6,7 @@ function showArithmeticOperators() {
     let subtraction = a - b;     // 5
     let multiplication = a * b;  // 150
     let division = a / b;        // 1.5...
-    let remainder = a % b;       // 1
+    let remainder = a % b;       // 5
         
     let output = `
         <strong>Arithmetic Operators:</strong><br><br>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types in Javascript</title>
+    <style>
+    .js-demo {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 2px solid #007bff;
+        color: black
+    }
+    
+    .output {
+        background-color: #e9ecef;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        border-left: 4px solid #28a745;
+    }
+    
+    .demo-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .demo-button:hover {
+        background-color: #0056b3;
+    }</style>
+</head>
+<body>
+    <div class="js-demo">
+        <h3> Data Types Deep Dive</h3>
+        <p>Explore different data types and how Javascript handles them:</p>
+        <button class="demo-button" onclick="exploreStrings()">Strings</button>
+         <button class="demo-button" onclick="exploreNumbers()">Numbers</button>
+          <button class="demo-button" onclick="exploreBooleans()">Booleans</button>
+           <button class="demo-button" onclick="exploreSpecialValues()">Special Values</button>
+           <div id="datatypes-output" class="output">click a button to explore data types...</div>
+    </div>
+    <script>
+        function exploreStrings(){
+            // Different ways to create strings
+            let singleQuotes = 'Hello World';
+            let doubleQuotes = "Javascript is fun";
+            let templateLiteral = `Today is ${new Date(). toDateString}`;
+
+            // String properties and methods
+            let message = "Learning JavaScript";
+            let length = message.length;
+            let uppercase = message.touppercase();
+
+            let output = `
+                <strong>Working with String:</strong><br><br>
+                Single quotes: '${singleQuotes}'<br>
+                Double quotes: "${doubleQuotes}"<br>
+                Template literal: \`${templateLiteral}\`<br><br>
+                <strong>String Methods:</strong><br><br>
+                Original: "${message}"<br>
+                Length: ${length} characters<br>
+                Uppercase: "${uppercase}"<br>
+                Lowercase: "${lowercase}"<br><br>
+                <em>Temperate literals (\`) allow embedding variables with \${}</em>
+                `;
+
+                document.getElementById('datatypes-output').innerHTML = output;
+        }
+        function exploreNumbers() {
+            // Different number types
+            let integer = 42;
+            let decimal = 3.14159;
+            let negative = -17;
+            let scientific = 2.5e6; // 2,500,000
+
+            // Math operations
+            let sum = 10 + 5;
+            let difference = 20 - 8
+            let product = 6 * 7;
+            let quotient = 15 / 3;
+            let remainder = 17 % 5;
+
+            // Special number values
+            let infinity = 1 / 0;
+            let notANumber = "hello" * 5;
+
+            let output = `
+            <strong>Working with Numbers:</strong><br><br>
+            Integer: ${integer}<br>
+            Decimal: ${decimal}<br>
+            Negative: ${negative}<br>
+            Scientific notattion: ${scientific}<br><br>
+            <strong>Math Operations:</strong><br>
+            10 + 5 = ${sum}<br>
+            20 - 8 = ${difference}<br>
+            6 * 7 = ${product}<br>
+            15 / 3 = ${quotient}<br>
+            17 % 5 = ${remainder} (remainder)<br><br> 
+            <strong> Special Values:</strong><br>
+            1 / 0 = ${infinity}<br>
+            "hello" * 5 = ${notANumber}<br>
+            `;
+            document.getElementById('datatypes-output').innerHTML = output;
+      }
+      function exploreBooleans(){
+        // Boolean values
+        let isTrue = true
+        let isFalse = false
+
+        // Boolean from comparisons
+        let isGreater = 10 > 5;
+        let isEqual = 5 === 5;
+        let isNotEqual = 3 !== 7;
+        let isLessOrEqual = 4 <= 4;
+        let isGreaterOrEqual = 5 >= 4;
+
+        // Truthy and falsy values
+        let truthyString = Boolean("hello");
+        let falsyString = Boolean("");
+        let truthyNumber = Boolean(42)
+        let falsyNumber = Boolean(0);
+
+        let output= `
+        <strong>Working with Booleans:</strong><br><br>
+        <strong>Direct Boolean Values:</strong><br>
+        isTrue: ${isTrue}<br>
+        isFalse: ${isFalse}<br>
+        <strong>Boolean from comparisons:</strong><br>
+        10 > 5: ${isGreater}<br>
+        5 === 5: ${isEqual}<br>
+        3 !==7: ${isNotEqual}<br>
+        4 <= 4: ${isLessOrEqual}<br>
+        5 >= 4: ${isGreaterOrEqual}<br><br>
+        <strong>Truthy vs Falsy:</strong><br>
+        Boolean("hello"): ${truthyString}<br>
+        Boolean(""): ${falsyString}<br>
+        Boolean(42): ${truthyNumber}<br>
+        Boolean(0): ${falsyNumber}<br><br>
+        <em>Empty strings, 0, null, undefined are "falsy"</em>
+        `;
+        document.getElementById('datatypes-output').innerHTML = output
+      }
+      function exploreSpecialValues() {
+        // undefined variable
+        let undefinedVar;
+
+        // Null value
+        let nullVar = null;
+
+        // Check types
+        let definedVar = "I have a value";
+
+        let output =`
+            <strong>Special Values:</strong><br><br>
+            <strong>Undefined:</strong><br>
+            Value: ${undefinedVar}<br>
+            Type: ${typeof undefinedVar}<br><br>
+            <strong>Null:</strong><br>
+            Value: ${nullVar}<br>
+            Type: ${typeof nullVar} (this is a JavaScript quirk)<br>
+            <strong>Defined variable:</strong><br>
+            Value: "${definedVar}"<br>
+            Type: ${typeof definedVar}<br><br>
+            <strong>Key Differences:</strong><nr>
+                undefined: Variable exists but has no value<br>
+                null: Intentionally set to "no value"<br>
+                Both are "falsy" in boolean context
+                `;
+                document.getElementById('datatypes-output').innerHTML = output
+      }
+    </script>
+</body>
+</html>

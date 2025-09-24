@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program</title>
+    <style>
+        .js-demo{
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 2px solid #007bff;
+            color: black;
+        }
+        .output{
+            background-color: #e9ecef;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', Courier, monospace;
+            border: left 4px solid #28a745;
+        }
+        .demo-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5 px
+        }
+        .demo-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="js-demo">
+        <h3>My First JavaScript Program</h3>
+        <p>Click the button to  run your first JavaScriptcode:</p>
+
+        <button class="demo-button" onclick="runFirstProgram()">Run Hello World</button>
+        <button class="demo-button" onclick="showAlert()"> Show Alert</button>
+        
+        <div id="first-output" class="output">output will appear here...</div>
+    </div>
+    <script>
+        function runFirstProgram(){
+            // This is a comment - JavaScript ignores this line
+            // Let's display a message in our output area
+            document.getElementById('first-output').innerHTML = 'Hello World! This message was created by JavaScript!';
+            // Also show it in the browser console (open Developer Tools to see)
+            console.log('Hello from JavaScript console!');
+        }
+        function showAlert(){
+            // Show a popup alert
+            alert('This is a javascript alert!')
+        }
+    </script>
+</body>
+</html>
