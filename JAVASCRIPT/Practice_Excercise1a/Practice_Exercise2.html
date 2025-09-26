@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise 2</title>
+</head>
+<body>
+    <script>
+        let grades = [60, 67, 73, 87, 93, 56, 88, 95]
+        function getAverage(grades) {
+            let total = 0;
+            for (let grade of grades) {
+                total += grade;
+            }
+            return total / grades.length;
+        }
+        console.log("Average grade:", getAverage(grades).toFixed(2));
+
+        function getHighest(grades) {
+            let highest = grades[0];
+            for(let grade of grades){
+                if (grade > highest){
+                    highest = grade;
+                }
+            }
+            return highest;
+        }
+        console.log("Highest grade:", getHighest(grades));
+
+        function getLowest(grades) {
+            let lowest = grades[0];
+            for(let grade of grades){
+                if (grade < lowest){
+                    lowest = grade;
+                }
+            }
+            return lowest;
+        }
+        console.log("Lowest grade:", getLowest(grades));
+
+        function getPassRate(grades){
+           for (let passRate= 0; passRate >= grades[50]; passRate+=1);
+            let passRate = grades[50];
+           for (let grade of grades){
+            if (grade > passRate){
+                passRate= count(grade)
+            }
+           }
+           return passRate;
+        }
+        console.log("No of passed student:", getPassRate(grades));
+    </script>
+</body>
+</html>

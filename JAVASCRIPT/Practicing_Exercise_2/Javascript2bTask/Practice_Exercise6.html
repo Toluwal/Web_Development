@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise 6</title>
+</head>
+
+<body>
+    <script>
+        // Creating a validation function
+        function isStrongPassword(password) {
+            if (typeof password !== 'string') return false;
+
+            let lengthCharacter = password.length >= 8;
+            let hasNumber = /[0-9]/.test(password);
+            // common special characters (excludes space)
+            let hasSpecialCharacter = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`]/.test(password);
+
+            return lengthCharacter && hasNumber && hasSpecialCharacter;
+        }
+        console.log(isStrongPassword("bolade@23"));
+
+        // Creating a formatter function
+        function formatPercentage(value) {
+            return `$${value.toFixed(1)}%`;
+        }
+        console.log(formatPercentage(123.7845));
+
+        // Creating Calculator function
+
+        function CalculateCompoundInterest(principal, rate, years) {
+            return principal * (1 + rate) ** years;
+        }
+        console.log(CalculateCompoundInterest(1200, 0.05, 4).toFixed(2));
+
+        // Creating a decision maker function
+        function canGraduate(credits, gpa) {
+            if (credits >= 120 && gpa >= 2.0) {
+                return "You can graduate";
+
+            } else {
+                return "You have an extra year";
+            }
+        }
+        console.log(canGraduate(100, 3.5));
+
+        // create a utility function
+        function reverseWord(sentence) {
+            return sentence.split("").reverse().join("");
+            }
+        let originalSentence = "I am a Developer";
+        let reversedSentence = reverseWord(originalSentence)
+        console.log(reversedSentence);
+    
+    </script>
+</body>
+
+</html>

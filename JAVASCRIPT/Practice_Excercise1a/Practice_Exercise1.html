@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercise1</title>
+</head>
+<body>
+    <script>
+        let shoppingList = ["Pen", "Pencil", "Eraser", "Mathset", "Ruler"];
+        console.log("Original shopping list:", shoppingList)
+
+        shoppingList.push("Ballpen");
+        console.log("updatedShoppingList: ", shoppingList);
+        
+        let firstItem = shoppingList.shift();
+        console.log("Removed item: ", firstItem);
+        console.log("Remaining Items: ", shoppingList);
+
+        console.log("No of items:", (shoppingList.length));
+
+        for (let i = 0; i < shoppingList.length; i++ ) {
+            console.log(`Shopping List ${i + 1}: ${shoppingList[i]}`)
+        }
+        // Challenge
+        totalList =[]
+        for (let i = 1; 1 < shoppingList; i++) {
+            console.log(`${i} : ${shoppingList[i]}}`)
+        }
+
+    </script>
+</body>
+</html>

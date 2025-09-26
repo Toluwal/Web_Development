@@ -51,7 +51,28 @@
     </div>
     <script>
         function showBasicComparisons() {
-            
+            let a = 10;
+            let b = 5;
+            let c = 10;
+
+            let output =`
+            <strong>Basic Comparison Operators:</strong><br><br>
+            a = ${a}, b = ${b}, c = ${c}<br><br>
+            <strong>Greater than (>):</strong><br>
+            a > b: ${a > b}<br>
+            b >a: ${b > a}<br><br>
+            <strong>Less than (<):</strong><br>
+            a < b: ${a < b}<br>
+            b <a: ${b < a}<br><br>
+            <strong>Greater than or equal (>=):</strong><br>
+            a >= c: ${a >= c}<br>
+            b >=a: ${b >= a}<br><br>
+            <strong>Less than or equal (<=):</strong><br>
+            a <= c: ${a <= c}<br>
+            b <=a: ${b <= a}<br><br>
+            <em>These operators return boolean values (true/false)</em>
+            `;
+            document.getElementById('comparison-output')
         }
     </script>
 </body>

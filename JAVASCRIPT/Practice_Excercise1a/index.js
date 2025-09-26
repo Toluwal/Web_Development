@@ -45,26 +45,30 @@ console.log(`Discount: ${result.discountPercent}%`);
 console.log(`Final price: $${result.finalPrice}`);
 
 function weatherAdvice(temperature, isRaining) {
-    if (temperature < 32 && "raining") {
+    if (temperature < 32 && isRaining) {
         return "Freezing rain! Stay inside!";
     } else if (temperature < 32) {
         return "Very cold, wear a heavy coat.";
     } else if (temperature >= 32 && temperature <= 60) {
         return "Chilly, bring a jacket.";
     } else if (temperature >= 60 && temperature <= 80) {
-        return "Nice weather"
-    } else if (temperature > 80)
-        return "It's hot, stay hydrated!"
-}
-let weatherAdvisor = weatherAdvice(32, false)
-console.log("weatherAdvice:")
-console.log(`weather Advisor: ${weatherAdvisor}`);
+        return "Nice weather";
+    } else if (temperature > 80){
+        return "It's hot, stay hydrated!";
+    }
+        
+    let advice = isRaining ? "bring an umbrella": "No umbrella needed"; 
+    console.log(advice);
 
-// if (isRaining) {
-//     console.log("bring an umbrella!");
-// } else {
-//     console.log("No umbrella needed")
-// }
+}
+    // console.log("")
+    weatherAdvice(30, true)
+    // let weatherAdvisor = weatherAdvice(32, true)
+    // console.log("weatherAdvice: ")
+    // console.log(`weather Advisor: ${weatherAdvisor}`);
+
+
+
 
 
 function atm(balance, action, amount) {
