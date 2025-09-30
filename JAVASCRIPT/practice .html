@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <button id="output" onclick="showPracticeExercise1"()>Show practice 1</button>
+    
+    <script>
+        // let message = "I am learning JavaScript";
+        // let fees = 10750
+        // console.log(`Message: ${message}`);
+        // console.log(`School Fees: $${fees}`);
+        // console.log(`Type of fees:`, typeof fees)
+
+        // // let isAdult = age >= 18;
+        // // console.log("Is Adult:", isAdult);
+        // // console.log("Type of Is Adult:", typeof isAdult);
+
+
+        // let firstName;
+        // let lastName;
+        // console.log("first name:", firstName);
+        // console.log("last name:", lastName);
+        // console.log("Type of First Name:", typeof firstName)
+
+        // firstName = "Ola";
+        // lastName = "James";
+        // console.log("After assigning values:");
+        // console.log("First name:", firstName);
+        // console.log(`Last name: ${lastName}`);
+
+        // let a = 20;
+        // let b = 5;
+        // console.log("Addition a+b:", a + b);
+        // console.log(`Subtraction a-b: ${a - b}`);
+        // console.log(`Multiplication a*b: ${a * b}`);
+        // console.log(`Division: a/b: ${a / b}`);
+        // console.log(`Remainder/Modulus: a%b ${a % b}`);
+        // console.log(`Exponential: a**b ${a ** b}`);
+
+        // let initialName = "Ola";
+        // let FinalName = "James";
+        // let age = 27;
+        // let word = " I have a big God   "
+        // let greeting = "Hello, my name is"+ " " + initialName + " " + FinalName + " " + "and I am " + " " + age + "years old."
+        // let greeting1 = `Hello, my name is ${initialName} ${lastName} and I am ${age} years old.`
+        // console.log(greeting);
+        // console.log(greeting1);
+        // console.log(`I wil be ${age+1} tommorow`);
+        // console.log(`My name has a length of ${initialName.length}`);
+        // console.log(`${initialName.toUpperCase ()}`);
+        // console.log(`${initialName.toLowerCase ()}`);
+        // console.log(`${word.trim()}`);
+        // console.log(word.trim().toLocaleUpperCase());
+        // console.log(word.indexOf("big"));
+        // console.log(word.includes("Gracious"));
+
+        // let hobbies = ["reading", "coding"];
+        // let person = {name: "Bob",age: 30};
+        // console.log(typeof hobbies);
+        // console.log(typeof person)
+
+        // let num1 = 5
+        // let num2 = 4
+        // let num3 = 5
+        // let str1 = 7
+
+        // console.log(`Str1= ${str1}`)
+        // console.log("num1===num3:", num1===num3);
+        // console.log("num1===num2:", num1===num2);
+        // console.log("num1==num3:", num1==num3);
+        // console.log("num2==num3:", num1==num3);
+        // console.log("num1!==num3:", num1!==num3);
+        // console.log("num2!==num3:", num1!==num3);
+        // console.log("num1>=num3:", num1>=num3);
+        // console.log("num2<=num3:", num1<=num3);
+        // console.log("num3<=num2:", num1<=num3);
+        // console.log("num2>=num1:", num1>=num3);
+
+    // PracticeExercise1
+    function showPracticeExercise1() {
+    let firstName = "Itunu";
+    let lastName = "Aboderin";
+    let age = 15;
+    let schoolName = "Kings College" ;
+    let grade =   "A";
+    let isGraduated = true;
+    let fullName = firstName + " " + lastName;
+    let nextYearAge = age + 1;
+    
+    let output =
+    console.log(fullName);    
+    console.log(`Full name: ${firstName} ${lastName} `);
+    // console.log(`Full name characters:`, fullName.length());
+    console.log("----Student Profile----")
+    console.log(`Name: ${firstName} ${lastName}`);
+    console.log(`Age: ${age}`);
+    console.log(`School ${schoolName}`);
+    console.log(`Grade: ${grade}`);
+    console.log(`Graduated: ${isGraduated}`);
+    console.log(`Next year age: ${nextYearAge}`);
+    console.log(`Eligibility: ${age>=18}`);
+
+    console.log("");
+    console.log("Name in uppercase:", fullName.toLocaleUpperCase());
+    // console.log("School Name in uppercase:", schoolName.tolowerCase());
+    // console.log("Trimmed grade:", grade.trim());
+    document.getElementById('output');
+}
+    // Practice Exercise 2
+
+    let num1 = 8;
+    let num2= 3;
+    console.log("Simple calculator");
+    console.log(`Addition: ${num1 + num2}`);
+    console.log(`Subtraction: ${num1 - num2}`);
+    console.log(`Multiplication: ${num1 * num2}`);
+    console.log(`Division: ${num1 / num2}`);
+    console.log(`Remainder: ${num1 % num2}`);
+    console.log(`Exponential: ${num1 ** num2}`);
+    console.log(`Average: ${(num1 + num2)/2}`);
+    console.log(`Num1 > Num2: ${num1 > num2}`);
+    console.log(`Between ${num1} and ${num2}, the larger number is ${num1}`);
+
+    // JavaScript 2a
+    function addNumbers(num1, num2) {
+        let result = num1 + num2
+        return result;
+    }
+    console.log("result:", addNumbers(7,5))
+        
+    </script>
+</body>
+
+</html>
