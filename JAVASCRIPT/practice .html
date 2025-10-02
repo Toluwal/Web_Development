@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button{
+        button {
             padding: 10px;
             background-color: aqua;
             border-radius: 5px;
         }
-        
     </style>
 </head>
 
 <body>
-    <button id="output" onclick="showPracticeExercise1"()>Show practice 1</button>
-    
+    <button id="output" onclick="showPracticeExercise1" ()>Show practice 1</button>
+
     <script>
         // let message = "I am learning JavaScript";
         // let fees = 10750
@@ -90,59 +89,347 @@
         // console.log("num3<=num2:", num1<=num3);
         // console.log("num2>=num1:", num1>=num3);
 
-    // PracticeExercise1
-    function showPracticeExercise1() {
-    let firstName = "Itunu";
-    let lastName = "Aboderin";
-    let age = 15;
-    let schoolName = "Kings College" ;
-    let grade =   "A";
-    let isGraduated = true;
-    let fullName = firstName + " " + lastName;
-    let nextYearAge = age + 1;
-    
-    let output =
-    console.log(fullName);    
-    console.log(`Full name: ${firstName} ${lastName} `);
-    // console.log(`Full name characters:`, fullName.length());
-    console.log("----Student Profile----")
-    console.log(`Name: ${firstName} ${lastName}`);
-    console.log(`Age: ${age}`);
-    console.log(`School ${schoolName}`);
-    console.log(`Grade: ${grade}`);
-    console.log(`Graduated: ${isGraduated}`);
-    console.log(`Next year age: ${nextYearAge}`);
-    console.log(`Eligibility: ${age>=18}`);
+        // PracticeExercise1
+        function showPracticeExercise1() {
+            let firstName = "Itunu";
+            let lastName = "Aboderin";
+            let age = 15;
+            let schoolName = "Kings College";
+            let grade = "A";
+            let isGraduated = true;
+            let fullName = firstName + " " + lastName;
+            let nextYearAge = age + 1;
 
-    console.log("");
-    console.log("Name in uppercase:", fullName.toLocaleUpperCase());
-    // console.log("School Name in uppercase:", schoolName.tolowerCase());
-    // console.log("Trimmed grade:", grade.trim());
-    document.getElementById('output');
-}
-    // Practice Exercise 2
+            let output =
+                console.log(fullName);
+            console.log(`Full name: ${firstName} ${lastName} `);
+            // console.log(`Full name characters:`, fullName.length());
+            console.log("----Student Profile----")
+            console.log(`Name: ${firstName} ${lastName}`);
+            console.log(`Age: ${age}`);
+            console.log(`School ${schoolName}`);
+            console.log(`Grade: ${grade}`);
+            console.log(`Graduated: ${isGraduated}`);
+            console.log(`Next year age: ${nextYearAge}`);
+            console.log(`Eligibility: ${age >= 18}`);
 
-    let num1 = 8;
-    let num2= 3;
-    console.log("Simple calculator");
-    console.log(`Addition: ${num1 + num2}`);
-    console.log(`Subtraction: ${num1 - num2}`);
-    console.log(`Multiplication: ${num1 * num2}`);
-    console.log(`Division: ${num1 / num2}`);
-    console.log(`Remainder: ${num1 % num2}`);
-    console.log(`Exponential: ${num1 ** num2}`);
-    console.log(`Average: ${(num1 + num2)/2}`);
-    console.log(`Num1 > Num2: ${num1 > num2}`);
-    console.log(`Between ${num1} and ${num2}, the larger number is ${num1}`);
+            console.log("");
+            console.log("Name in uppercase:", fullName.toLocaleUpperCase());
+            // console.log("School Name in uppercase:", schoolName.tolowerCase());
+            // console.log("Trimmed grade:", grade.trim());
+            document.getElementById('output');
+        }
+        // Practice Exercise 2
 
-    // JavaScript 2a
-    function addNumbers(num1, num2) {
-        let result = num1 + num2
-        return result;
-    }
-    console.log("result:", addNumbers(7,5))
+        let num1 = 8;
+        let num2 = 3;
+        console.log("Simple calculator");
+        console.log(`Addition: ${num1 + num2}`);
+        console.log(`Subtraction: ${num1 - num2}`);
+        console.log(`Multiplication: ${num1 * num2}`);
+        console.log(`Division: ${num1 / num2}`);
+        console.log(`Remainder: ${num1 % num2}`);
+        console.log(`Exponential: ${num1 ** num2}`);
+        console.log(`Average: ${(num1 + num2) / 2}`);
+        console.log(`Num1 > Num2: ${num1 > num2}`);
+        console.log(`Between ${num1} and ${num2}, the larger number is ${num1}`);
+
+        // JavaScript 2a
+        function addNumbers(num1, num2) {
+            let result = num1 + num2
+            return result;
+        }
+        console.log("result:", addNumbers(7, 5))
+
+
+        function sayHello() {
+            console.log("Hello from my first function!");
+        }
+        sayHello();
+
+        function showCurrentTime() {
+            let now = new Date();
+            console.log(`Current time: ${now.toLocaleTimeString()}`);
+        }
+        showCurrentTime();
+
+        function greetPerson(name) {
+            console.log(`Hello ${name}! Welcome to Javascript!`);
+
+        }
+        greetPerson("Ayomide")
+
+        function introduce(firstName, lastName, age) {
+            console.log(`I am ${firstName} ${lastName} and I am ${age} years old`);
+        }
+        introduce("Ade", "Bobola", 17);
+
+        function greetWithDefault(name = "Friend") {
+            console.log(`Hello, ${name}`)
+        }
+        greetWithDefault();
+        greetWithDefault("Mabel");
+
+        function addNumbers(num1, num2) {
+            console.log(`addition: ${num1 + num2}`);
+        }
+        addNumbers(5, 7);
+
+        function addNumbers(num1, num2) {
+            let result = num1 + num2;
+            return result;
+        }
+        let sum = addNumbers(5, 3);
+        console.log("Sum:", sum);
+        console.log("10 + 7:", addNumbers(10, 7));
+
+        function createFullName(first, middle, last) {
+            return `${first} ${middle} ${last}`.trim();
+        }
+        let fullName = createFullName("Ayo", "Ade", "Daramola");
+        console.log("Full name:", fullName);
+        function isAdult(age) {
+            return age >= 18;
+        }
+        console.log("Is 16 Adult:", isAdult(16));
+        console.log("Is 26 Adult:", isAdult(26));
+
+        let userAge = 20;
+        if (isAdult(userAge)) {
+            console.log("User can vote!");
+        } else {
+            console.log("User cannot vote yet.");
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                return "Cannot divide by zero!";
+            }
+            return a / b;
+        }
+
+        function calculateArea(length, width) {
+            return length * width;
+        }
+        console.log("Multiply 6 × 4 =", multiply(6, 4));
+        console.log("Divide 15 ÷ 3 =", divide(15, 3));
+        console.log("Divide 15 ÷ 0 =", divide(15, 0));
+        console.log("Area of 5×3 room =", calculateArea(5, 3), "square units");
+
+        let grade = 87;
+
+        // Multiple conditions with else if
+        if (grade >= 90) {
+            console.log("Grade: A - Excellent!");
+        } else if (grade >= 80) {
+            console.log("Grade: B - Good work!");
+        } else if (grade >= 70) {
+            console.log("Grade: C - Satisfactory");
+        } else if (grade >= 60) {
+            console.log("Grade: D - Needs improvement");
+        } else {
+            console.log("Grade: F - Please see instructor");
+        }
+
+        let temperature = 45;
+        let isSnowing = false;
+
+        if (temperature < 32 && isSnowing) {
+            console.log("Bundle up! It's freezing and snowing!");
+        } else if (temperature < 32) {
+            console.log("It's freezing! Wear a heavy coat!");
+        } else if (temperature < 50) {
+            console.log("It's chilly. A jacket would be good.");
+        } else if (temperature < 70) {
+            console.log("Nice weather! A light sweater is perfect.");
+        } else {
+            console.log("It's warm! T-shirt weather!");
+        }
+
+        let hour = 14;
+
+        if (hour < 12) {
+            console.log("Good morning!");
+        } else if (hour < 18) {
+            console.log("Good afternon!")
+        } else {
+            console.log("Good evening!");
+        }
+
+        let age = 22;
+        let hasLicense = true;
+        let hasInsurance = false;
+        let isWeekend = true;
+        let isHoliday = false;
+        let weather = "sunny";
+
+        // AND operator (&&) - both conditions must be true
+        if (age >= 18 && hasLicense) {
+            console.log("You can drive!");
+        } else {
+            console.log("You cannot drive yet.");
+        }
+
+        // Multiple AND conditions
+        if (age >= 18 && hasLicense && hasInsurance) {
+            console.log("You can drive legally!");
+        } else {
+            console.log("You're missing something to drive legally.");
+        }
+
+        if (isWeekend || isHoliday) {
+            console.log("No work today!");
+        } else {
+            console.log("Time to work!");
+        }
+
+        if ((isWeekend || isHoliday) && weather === "sunny") {
+            console.log("Perfect day for a picnic!");
+        }
+
+        let temperatures = 75;
+        let humidity = 40;
+        let isRaining = false;
+
+        if (temperatures >= 70 && temperatures <= 85 && humidity < 60 && !isRaining) {
+            console.log("Perfect weather conditions!");
+        } else {
+            console.log("Weather could be better.");
+        }
+
+        function checkPassword(password) {
+            if (password.length < 8) {
+                return "Password too short! Must be at least 8 characters.";
+            } else if (password === "password" || password === "123456") {
+                return "Password too common! Choose something more secure.";
+            } else if (password.length > 20) {
+                return "Password too long! Keep it under 20 characters.";
+            } else {
+                return "Password looks good!";
+            }
+        }
+        console.log("Testing passwords:");
+        console.log(checkPassword("abc"));           // Too short
+        console.log(checkPassword("password"));      // Too common
+        console.log(checkPassword("mySecurePass123")); // Good
+        console.log(checkPassword("thisPasswordIsWayTooLongToBeUseful")); // Too long
+        console.log(checkPassword("123456789"));
+
+        function getAgeGroup(age) {
+            if (age < 0) {
+                return "Invalid age";
+            } else if (age < 13) {
+                return "Child";
+            } else if (age < 20) {
+                return "Teenager";
+            } else if (age < 60) {
+                return "Adult";
+            } else {
+                return "Senior";
+            }
+        }
+
+        let ages = [5, 16, 25, 45, 67];
+        ages.forEach(age => {
+            console.log(`Age ${age}: ${getAgeGroup(age)}`)
+        })
+
+        function calculateDiscount(price, customerType, isFirstTime) {
+            let discount = 0;
+
+            if (customerType === "student") {
+                discount = 0.10; // 10% discount
+            } else if (customerType === "senior") {
+                discount = 0.15; // 15% discount
+            } else if (customerType === "employee") {
+                discount = 0.20; // 20% discount
+            }
+
+            // Additional discount for first-time customers
+            if (isFirstTime) {
+                discount += 0.05; // Extra 5%
+            }
+
+            let finalPrice = price * (1 - discount);
+            return {
+                originalPrice: price,
+                discountPercent: discount.toFixed(2) * 100,
+                finalPrice: finalPrice.toFixed(2)
+            };
+        }
+
+        let result = calculateDiscount(240, "student", true);
+        console.log("Price calculation:");
+        console.log(`Original: $${result.originalPrice}`);
+        console.log(`Discount: ${result.discountPercent}%`);
+        console.log(`Final price: $${result.finalPrice}`);
+
+        let aged = 20;
+        let temperatured = 85;
+        let score = 92;
+        let isLoggedIn = true;
+
+        // Basic ternary operator usage
+        let status = age >= 18 ? "adult" : "minor";
+        console.log(`Status: ${status}`)
+
+        let greeting = temperatured >= 75 ? "Sunny" : "raining";
+        console.log(`Greeting: ${greeting}`)
+
+        let message = isLoggedIn ? "Welcome back!" : "Please log in";
+        console.log(message);
+
+        let graded = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";
+        console.log(`Grade: ${graded}`);
+
+        function getShippingCost(orderAmount, isPremium) {
+            return orderAmount > 50 ? 0 : isPremium ? 5 : 10;
+        }
+
+        console.log("Shipping examples:");
+        console.log(`$30 order, regular: $${getShippingCost(30, false)}`);
+        console.log(`$30 order, premium: $${getShippingCost(30, true)}`);
+        console.log(`$60 order, regular: $${getShippingCost(60, false)}`);
+
+        let users = [
+            { name: "Alice", age: 25 },
+            { name: "Bob", age: 16 },
+            { name: "Charlie", age: 30 }
+        ];
+
+        users.forEach(user =>{
+            let canVote =user.age >=18 ? "Yes" : "No";
+            console.log(`${user.name} (${user.age}) can vote: ${canVote}`);
+        });
+
+        function personalAssistant(hour, weather, dayType) {
+        // let hour = 12;
+        // let weather = ["sunny","rainy", "cloudy"];
+        // let dayType =["workday", "weekend", "holiday"]
+        if (hour < 12 && weather ==="sunny" && dayType === "weekend" || "holiday"){
+            return "A free sunny morning. A perfect weather condition. Enjoy...";
+        } else if (hour < 12 && weather === "rainy" && dayType === "weekday"){
+            return "A rainy morning workday. Please put on your jacket, there is cold.";
+        } else if (hour > 18 && weather === "cloudy"){
+            return "A cloudy afternon, It may rain, ensure you have umbrella"
+        }
+
+        }
+
+        // console.log(12, weather("rainy"), dayType("workday"));
+        console.log(personalAssistant(12, "rainy", "workday"));
         
+
+
+
+
+
     </script>
+
 </body>
 
 </html>
