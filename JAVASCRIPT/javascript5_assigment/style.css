@@ -1,0 +1,59 @@
+body {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      padding: 50px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 80%;
+      height: 150px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    #counter {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .limit-exceeded {
+      color: red; 
+    }
+
+
+    form {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 8px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+
+  
+  
+    

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Class Example</title>
+</head>
+<body>
+  <h2>Practice Exercise 7</h2>
+  <pre id="output"></pre>
+
+  <script>
+    // 1. Define the Book class
+    class Book {
+      constructor(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.isBorrowed = false; // default
+      }
+
+      // Method to get summary
+      getSummary() {
+        return `Book: "${this.title}" by ${this.author} (${this.year})`;
+      }
+
+      // Method to borrow book
+      borrowBook() {
+        if (!this.isBorrowed) {
+          this.isBorrowed = true;
+          return `${this.title} has been borrowed.`;
+        } else {
+          return `${this.title} is already borrowed.`;
+        }
+      }
+    }
+
+    // 2. Create some Book objects
+    const book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+    const book2 = new Book("To Kill a Mockingbird", "Harper Lee", 1960);
+
+    // 3. Call methods and show results
+    let outputText = "";
+    outputText += book1.getSummary() + "\n";
+    outputText += book2.getSummary() + "\n\n";
+
+    // Borrowing books
+    outputText += book1.borrowBook() + "\n";
+    outputText += book1.borrowBook() + "\n"; // try borrowing again
+    outputText += book2.borrowBook() + "\n";
+
+    // Show on page
+    document.getElementById("output").textContent = outputText;
+  </script>
+</body>
+</html>
