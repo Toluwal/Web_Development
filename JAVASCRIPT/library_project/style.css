@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
   font-family: Arial, sans-serif;
@@ -13,19 +14,38 @@ body {
   padding: 20px;
 }
 
+.navbar {
+  background: #800080;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logoutBtn {
+  background: none;
+  color: #fff;
+  padding-right: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutBtn:hover { background: #ca31ca; }
+
 h2, h3 {
   text-align: center;
   margin-bottom: 15px;
 }
 
-form, table {
+form {
   width: 100%;
   margin-top: 15px;
   display: flex;
-  gap: 15px;
- }
+  gap: 20px
+   }
 
-input, select, button {
+input, select {
   width: 100%;
   padding: 10px;
   margin: 6px 0;
@@ -33,13 +53,16 @@ input, select, button {
   border: 1px solid #ccc;
 }
 
-button {
-  background: #0077cc;
-  color: white;
+.add_btn{
+  background: #800080;
+  color: #fff;
   border: none;
+  border-radius: 5px;
+  padding: 6px 20px;
   cursor: pointer;
 }
-button:hover { background: #005fa3; }
+
+.add_btn:hover { background: #ca31ca; }
 
 table {
   border-collapse: collapse;
@@ -55,16 +78,10 @@ th, td {
 .status-Available { background: #d4edda; }
 .status-Checked\ Out { background: #f8d7da; }
 
-.navbar {
-  background: #0077cc;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
 .error { color: red; text-align: center; }
 
 @media (max-width: 600px) {
   table, thead, tbody, th, td, tr { display: block; }
   th { background: #eee; }
 }
+
