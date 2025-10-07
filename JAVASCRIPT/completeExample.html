@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Café Example</title>
+</head>
+<body>
+  <h1>Welcome to Async Café ☕</h1>
+  <button onclick="orderCoffee()">Order Coffee</button>
+  <div id="output"></div>
+
+  <script>
+    // 1. Simulate making coffee (takes 3 seconds)
+    function makeCoffee() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve("✅ Your coffee is ready!");
+        }, 3000);
+      });
+    }
+
+    // 2. Place an order
+    async function orderCoffee() {
+      let output = document.getElementById("output");
+      output.innerHTML = "⏳ Making your coffee... please wait.";
+
+      try {
+        let result = await makeCoffee(); // Wait for the coffee
+        output.innerHTML = result;
+      } catch (error) {
+        output.innerHTML = "❌ Something went wrong: " + error;
+      }
+    }
+  </script>

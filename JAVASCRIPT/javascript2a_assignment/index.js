@@ -1,3 +1,5 @@
+// Practice Exercise 1
+
 function getGrade(score) {
     if (score == 100) {
         return "Outstanding! Grade: A+";
@@ -7,17 +9,19 @@ function getGrade(score) {
         return "B";
     } else if (score >= 70 && score == 79) {
         return "C";
-    } else if (score >= 60 && score == 69){
+    } else if (score >= 60 && score == 69) {
         return "D";
-    }else if (score <= 60)
+    } else if (score <= 60)
         return "F";
     else
         return "Invalid input";
 
 
-    
+
 }
 console.log(getGrade(120))
+
+// Pracctice Exercise 2
 
 function calculatePrice(price, customerType, isFirstPurchase) {
     let discount = 0;
@@ -65,7 +69,7 @@ function weatherAdvice(temperature, isRaining) {
 
 }
 weatherAdvice(30, true)
-;
+    ;
 
 
 function atm(balance, action, amount) {
