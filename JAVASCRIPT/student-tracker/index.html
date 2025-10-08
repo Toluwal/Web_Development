@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Tracker</h1>
+        <button id="view" onclick="view()">View</button>
+    </div>
+    <form action="">
+        <label for="student name">Student Name:</label>
+        <input type="text" name="Name" id="name" placeholder="Enter your name"> <br><br>
+        <label for="age">Age:</label> 
+        <input type="number" id="age" placeholder="Enter your age"> <br><br>
+        <label for="class">Class:</label> 
+        <input type="text" id="class" placeholder="Enter your class"> <br><br>
+        <label for="image">Student profile:</label> 
+        <input type="url" id="image" placeholder="image url"> <br><br>
+        <label for="subject">Mathematics:</label>
+        <input type="number" id="mathematics" placeholder="Enter your Mathematics score"> <br><br>
+        <label for="subject">English:</label>
+        <input type="number" id="english" placeholder="Enter your English score"> <br><br>
+        <label for="subject">Chemistry:</label>
+        <input type="number" id="chemistry" placeholder="Enter your Chemistry"> <br><br>
+    </form>
+
+    <div>
+        <table border="1" >
+            <thead>
+                <th>S/N</th>
+                <th>Profile picture</th>
+                <th>Name</th>
+                <th>class</th>
+                <th>Average</th>
+                <th>Category</th>
+                <th>Action</th>
+            </thead>
+            <thead id="display"></thead>
+        </table> <br><br>
+    </div>
+    <div>
+        <button id="add" onclick="add()">Add Student</button>
+        <button id="delete" onclick="remove()">Delete</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

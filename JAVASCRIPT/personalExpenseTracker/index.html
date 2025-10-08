@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal expense tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="" id="">
+            <h1>Personal Expense Tracker</h1>
+            <button id="amount" onclick="amount ()">Total Amount </button>
+        </div>
+        <div>
+            <form action="" method="get">
+               <input type="text" name="Expense name" placeholder="input expense name"> <br> <br>
+                <select name="Category" id=""> 
+                    <option class="food" value="food">Food</option>
+                    <option class="transport" value="transport">Transport</option>
+                    <option class="entertainment" value="entertainment">Entertainment</option>
+                    <option class="education" value="education">Education</option>
+                    <option class="other" value="other">Other</option>
+                </select> <br> <br>
+               <input type="number" name="Amount" placeholder=" Enter expenses amount "> <br> <br>
+               <input type="date" name="Date" placeholder=" Enter date "> <br> <br>
+
+                
+            </form>
+            
+            <table border="1">
+                <thead>
+                <th>S/N</th>
+                <th>Expense Name</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+               </thead>
+               <thead id="display"></thead>
+               </table>
+        </div>
+        <div>
+            <button id="add" onclick="add()">Add</button>
+            <button id="add" onclick="deleted()">Add</button>
+            <button id="add" onclick="edit()">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
